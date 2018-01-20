@@ -1,6 +1,8 @@
 package practice2;
 
 /**
+ * 2.Add Two Numbers
+ *
  * @author Jeffrey
  * @since 2017/11/19 20:40
  */
@@ -18,7 +20,7 @@ public class Practice2 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode root = new ListNode(-1);
-        ListNode tmp = root,p = l1, q = l2;
+        ListNode tmp = root, p = l1, q = l2;
         int carry = 0;
         while (p != null || q != null) {
             int val = (p != null ? l1.val : 0) + (q != null ? q.val : 0) + carry;
